@@ -18,5 +18,55 @@
             <p>Photo by <a href="https://unsplash.com/@usgs" target="_blank">USGS</a> on <a href="https://unsplash.com/photos/WQ5HOvrDZ6Y" target="_blank">Unsplash.</a></p> 
         </div>
     </div>
+
+    <div class="form-box">
+        <div class="intro">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+        </div>
+        <div class="form">
+            <p>Let's do this!</p>
+            <form id="create-account" action="#" method="post">
+                <div class="name">
+                    <label for="first-name">
+                        First Name
+                        <input type="text" name="first-name" id="first-name" autocomplete="first-name" placeholder="Thor" required>
+                    </label>
+                    <label for="last-name">
+                        Last Name
+                        <input type="text" name="last-name" id="last-name" autocomplete="last-name" placeholder="Odinson" required>
+                    </label>
+                </div>
+                <div class="contact">
+                    <label for="email">
+                        Email
+                        <input type="email" name="email" id="email" autocomplete="email" placeholder="thor.odinson@odinmail.com" required>
+                        <p class="requirements">Please enter a valid email address.</p>
+                    </label>
+                    <label for="phone">
+                        Phone Number
+                        <input type="phone" name="phone" id="phone" autocomplete="phone" placeholder=" " required pattern="^(?:0|\+?44)(?:\d\s?){9,10}$">
+                        <p class="requirements">Please enter a valid phone number.</p>
+                    </label>
+                </div>
+                <div class="password">
+                    <label for="password">
+                        Password
+                        <input type="password" name="password" id="password" autocomplete="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                        <p class="requirements">Your password must be at least 6 characters and contain at least one uppercase, one lowercase, and one number.</p>
+                    </label>
+                    <label for="confirm">
+                        Confirm Password
+                        <input type="password" name="confirm" id="confirm" autocomplete="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                        <p class="requirements">Please repeat your password.</p>    
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="button">
+            <button form="create-account" type="submit" name="submit">Create Account</button>
+            <p>Already have an account? <a href=#>Log in here</a></p>
+        </div>
+    </div>
 </body>
 </html>
